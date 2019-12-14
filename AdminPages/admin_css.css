@@ -1,0 +1,31 @@
+.body{
+      width: 75%;
+    float: left;
+    height: 1000px;
+    padding: 50px;
+  }
+}
+
+.cards{
+  display: flex;
+}
+
+.card {
+    width: 21%;
+    height: 57px;
+    margin: 30px;
+    display: inline-flex;
+    box-shadow: 0 0 10px rgba(99, 98, 98, 0.5);
+    padding: 32px;
+        background-color: ghostwhite;
+
+}
+
+.card-text{
+  text-align: center;
+  margin: 0;
+}
+
+.card-info{
+  margin: 39px;
+}

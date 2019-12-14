@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about us</title>
+	<style>
+
+    body{
+      font-family: 'Work Sans', sans-serif;
+      margin: 0;
+      font-weight: 800;
+
+    }
+
+    .content{
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .show{
+      display: none;
+    }
+
+/*MAIN HEADER*/
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffa500;
+      height: 50px;
+    }
+
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .logo {
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    .logo a {
+      color: #000;
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 70px;
+      position: relative;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #444;
+      width: 0%;
+      transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    .loop{
+      width: 25px;
+      top: -15px;
+      position: absolute;
+      left: 27px;
+    }
+
+
+/*HEADER*/
+    header > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+    }
+
+    .header {
+        background-color: white;
+        border-bottom: solid 1px #dbd2d2;
+    }
+
+    .header ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        height: 40px;
+    }
+
+    .header li {
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .header a {
+      margin-right: 35px;
+      margin-left: 35px;
+        color: black;
+        text-decoration: none;
+        font-size: 11px ;
+    }
+
+    .header a:hover {
+      color: #ffa500;
+    }
+
+    .subheader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*BOTTON*/
+    .botton {
+      background-color: rgb(34 34 34);
+    }
+
+    .botton_link {
+      display: flex;
+    }
+
+    .botton_link ul{
+
+      display: flex;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .botton_link p {
+      color: rgb(144  144 144 );
+      font-size: 16px;
+        padding: 10px;
+    }
+
+    .botton_link li {
+      padding-top: 20px;
+    }
+
+    .botton_link li a {
+      color: white;
+        text-decoration: none;
+        margin: 0px 25px;
+        font-size: 14px;
+    }
+
+
+/*MEDIA*/
+ @media screen and (max-width: 1000px) {
+   header{
+     height: 45px;
+   }
+
+   .row_info h2{
+    font-size: 13px;
+    }
+
+   .row_info p {
+    font-size: 12px;
+    }
+ }
+
+  @media screen and (max-width: 900px) {
+    header {
+      height: 70px;
+    }
+
+    header a {
+       font-size: 15px;
+    }
+  }
+
+    @media screen and (max-width: 760px) {
+    .row_info h2{
+      font-size: 11px;
+    }
+
+    .row_info p {
+      font-size: 10px;
+    }
+      
+      .heart, .likes_views, .fa {
+        display: none;
+      }
+    }
+
+    
+
+    @media (max-width: 650px) {
+      .row_img img {
+          width: 200px;
+          height: 100px;
+      }
+      
+      .cards {
+        display: contents;
+      }
+
+      .card:first-child {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .card{
+        width: 49%;
+        display: inline-flex;
+       }
+
+       .row{
+        margin-top: 10px
+       }
+    }
+
+    @media (max-width: 550px) {
+      header{
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+      .show{
+        display: inline-block;
+      }
+
+      header ul{
+        margin-top: 30px;
+      }
+
+      .main, .new, .best, .user {
+        display: none;
+      }
+
+      header a{
+        font-size: 30px;
+      }
+
+      .header{
+        display: none;
+      }
+
+      .loop{
+            left: -25px;
+
+      }
+    }
+
+    @media (max-width: 450px) {
+      header{
+        height: 80px;
+      }
+
+      /*.user {
+        display: none;
+      }*/
+
+      .card {
+    width: 100%;
+    margin-bottom: 10px;
+      }
+
+      .row_info p{
+        display: none;
+      }
+
+
+
+      .row_info h2 {
+    position: relative;
+    width: 242%;
+    right: 198%;
+    color: white;
+    top: 37%;
+    font-size: 18px;
+    }
+
+      .row_info .card_tag {
+    display: none;
+    }
+
+    .row_img img {
+        width: 127%;
+        height: 100%;
+    }
+    
+
+</style>
+</head>
+<body>
+
+	<section>
+		<header>
+		    <div class="container">
+		      <h1 class="logo">
+		      	<a href="contents.html" class="show">≣</a>
+		      	<a href="Project.html">Foodcord</a>
+		      </h1>
+
+		      <nav>
+		        <ul>
+		          <li class="main"><a href="Project.html">НОВОСТИ</a></li>
+		          <li class="new"><a href="new.html">СВЕЖЕЕ</a></li>
+		          <li class="best"><a href="best.html">ЛУЧШЕЕ</a></li>
+		          <li><a href="#"><img class="loop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png"></a></li>
+		          <li class="user"><a href="/Users/shyngys/Desktop/Admin/111/AdminPages/admin.html">User</a></li>
+		        </ul>
+		      </nav>
+		    </div>
+		</header>
+	</section>
+
+<div class="container">
+  <div itemprop="articleBody" class="post-content js-lh-article" data-io-article-url="https://lifehacker.ru/about/">
+            <header class="entry-header">
+                <h1 class="single__title">Что такое Foodcord и зачем мы всё это делаем</h1>            </header><!-- .entry-header -->
+
+            <h2>Кто мы</h2>
+<p>Foodcord — это издание для тех, кто хочет становиться лучше каждый день.</p>
+<p>Мы рассказываем обо всём, что улучшает жизнь, доступно отвечаем на сложные вопросы, помогаем читателю решать проблемы и делать повседневность осмысленной.</p>
+<p>Мы любим спорт, здоровье и еду, рассказываем про отношения и финансы, не брезгуем подборками фильмов и книг, пишем про новинки в сфере технологий, устройства и полезные программы, делимся выгодными акциями, скидками и практическими советами для всех сфер жизни.</p>
+<h2>Миссия</h2>
+<p>Исправить несовершенство мира и сделать жизнь читателя вкуснее: ответить на вопросы, решить проблемы, замотивировать, вдохновить, расширить кругозор, научить, развлечь. Мы хотим, чтобы наш читатель копал глубже, понимал лучше, видел перспективу.</p>
+<p>Мы против хлама и всякого рода токсичности, зависимостей и пожирателей времени, безграмотности и жадности, комплексов и пассивности, толпы и серости. Наш призыв — видеть больше, мыслить шире, жить дольше, любить ярче, бежать быстрее, мечтать смелее.</p>
+<h2>Цель</h2>
+<p>Цель каждой статьи в ЛХ — ответить на все возможные вопросы по теме и не спровоцировать новые неудачными формулировками. В наших текстах нет воды (огромных описаний, которые не несут смысловой нагрузки), псевдонаучности, терминов, затрудняющих восприятие и неизвестных Google, оторванных от реальности советов.</p>
+</div>
+
+</div>
+
+
+	<section class="botton">
+		<div class="container">
+			<div class="botton_links">
+				<div class="botton_link">
+					<ul>
+						<p class="botton_link_dis">ИНФОРМАЦИЯ</p>
+						<li>
+							<a href="">Реклама</a>
+							<a href="">Контакты</a>
+							<a href="">ОПроекте</a>
+						</li>
+					</ul>
+				</div>
+				<div class="botton_link">
+					<ul>
+						<p class="botton_link_dis">ПОДПИСКА</p>
+						<li>
+							<a href="">Facebook</a>
+							<a href="">Вконтакте</a>
+							<a href="">Telegram</a>
+						</li>
+					</ul>
+				</div>
+				<div class="botton_link">
+					<ul>
+						<p class="botton_link_dis">ПРИЛОЖЕНИЯ</p>
+						<li>
+							<a href="">IOS</a>
+							<a href="">Android</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+
