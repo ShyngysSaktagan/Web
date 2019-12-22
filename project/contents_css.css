@@ -1,0 +1,36 @@
+
+/*.show_content{
+  padding : 20px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.exit {
+  font-size: 100px;
+      text-decoration: none;
+    color: black;
+}
+
+.contents{
+   list-style-type: none;
+}
+
+.contents li{
+  margin: 20px;
+}
+
+.contents a{
+      text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.contents a:hover{
+      border-bottom: 4px orange solid;
+
+}
+
+span{
+      font-size: 68px;
+    font-weight: 300;
+    color: orange;
+}*/

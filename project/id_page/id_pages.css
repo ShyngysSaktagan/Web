@@ -1,0 +1,392 @@
+		body{
+			font-family: 'Roboto Condensed', sans-serif;
+			margin: 0;
+			font-weight: 800;
+		}
+
+		.container {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+/*MAIN HEADER*/
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffa500;
+      height: 50px;
+    }
+
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .logo {
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    .logo a {
+      color: #000;
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 70px;
+      position: relative;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #444;
+      width: 0%;
+      transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    .loop{
+      width: 25px;
+      top: -15px;
+      position: absolute;
+      left: 27px;
+    }
+
+
+/*HEADER*/
+    header > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+    }
+
+    .header {
+        background-color: white;
+        border-bottom: solid 1px #dbd2d2;
+    }
+
+    .header ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        height: 40px;
+    }
+
+    .header li {
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .header a {
+      margin-right: 35px;
+      margin-left: 35px;
+        color: black;
+        text-decoration: none;
+        font-size: 11px ;
+    }
+
+    .header a:hover {
+      color: #ffa500;
+    }
+
+    .subheader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+/*BODY*/
+
+		.body .container{
+			padding: 20px;
+			/*background: rgba(251, 216, 167, 0.11);*/
+    		
+		}
+
+		.body h2 {
+		    width: 80%;
+		    margin: 0;
+		    display: contents;
+		}
+
+    .body p {
+      font-weight: 400;
+    }
+
+		.body .main_img{
+			width: 100%;
+			text-align: center;
+			box-shadow: -2px 4px 21px -11px rgba(0,0,0,0.5);
+		}
+
+		.heart {
+		    position: absolute;
+		    right: 87px;
+		}
+
+		.heart img {
+			width: 45px;
+		    opacity: 0.34;
+		    transition: opacity 0.5s;
+		}
+
+		.heart img:hover {
+		    opacity: 0.8;
+		}
+
+		.body .main_info{
+			font-size: 17px;
+		}
+
+		.body h4{
+			border-bottom: 1px solid red;
+			padding: 10px;
+			width: 150px; 
+		}
+
+		.body li{
+			font-size: 15px;
+		}
+
+		.body .cooking p{
+			font-size: 15px;
+			width: 80%;
+		}
+
+		.main_card{
+		    padding: 10px;
+		    border-radius: 21px;
+		    background: #fff;
+		}
+
+		.card {
+		    box-shadow: -2px 4px 21px -11px rgba(0,0,0,0.5);
+		    padding: 10px;
+		    border-radius: 21px;
+		    background: #fff;
+		    margin: 50px;
+		}
+
+
+/*BOTTON*/
+    .bottom {
+      background-color: rgb(34 34 34);
+    }
+
+    .bottom_link {
+      display: flex;
+    }
+
+    .bottom_link ul{
+
+      display: flex;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bottom_link p {
+      color: rgb(144  144 144 );
+      font-size: 16px;
+        padding: 10px;
+    }
+
+    .bottom_link li {
+      padding-top: 20px;
+    }
+
+    .bottom_link li a {
+      color: white;
+        text-decoration: none;
+        margin: 0px 25px;
+        font-size: 14px;
+    }
+
+
+
+/*MEDIA*/
+ @media screen and (max-width: 1000px) {
+   header{
+     height: 45px;
+   }
+
+   .row_info h2{
+    font-size: 13px;
+    }
+
+   .row_info p {
+    font-size: 12px;
+    }
+ }
+
+  @media screen and (max-width: 900px) {
+    header {
+      height: 70px;
+    }
+
+    header a {
+       font-size: 15px;
+    }
+  }
+
+    @media screen and (max-width: 760px) {
+    .row_info h2{
+      font-size: 11px;
+    }
+
+    .row_info p {
+      font-size: 10px;
+    }
+      
+      .heart, .likes_views, .fa {
+        display: none;
+      }
+    }
+
+    
+
+    @media (max-width: 650px) {
+      .row_img img {
+          width: 200px;
+          height: 100px;
+      }
+      
+      .cards {
+        display: contents;
+      }
+
+      .card:first-child {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .card{
+        width: 49%;
+        display: inline-flex;
+       }
+
+       .row{
+        margin-top: 10px
+       }
+    }
+
+    @media (max-width: 550px) {
+      header{
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+      .show{
+        display: inline-block;
+      }
+
+      header ul{
+        margin-top: 30px;
+      }
+
+      .main, .new, .best, .user {
+        display: none;
+      }
+
+      header a{
+        font-size: 30px;
+      }
+
+      .header{
+        display: none;
+      }
+
+      .loop{
+            left: -25px;
+
+      }
+    }
+
+    @media (max-width: 450px) {
+      header{
+        height: 80px;
+      }
+
+      /*.user {
+        display: none;
+      }*/
+
+      .card {
+    width: 100%;
+    margin-bottom: 10px;
+      }
+
+      .row_info p{
+        display: none;
+      }
+
+
+
+      .row_info h2 {
+    position: relative;
+    width: 242%;
+    right: 198%;
+    color: white;
+    top: 37%;
+    font-size: 18px;
+    }
+
+      .row_info .card_tag {
+    display: none;
+    }
+
+    .row_img img {
+        width: 127%;
+        height: 100%;
+    }
+    
+
+
+/*SHOW CONTENTS*/
+
+
+
+
+
+
+
+
+
+
+
+
