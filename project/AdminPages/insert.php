@@ -38,7 +38,7 @@ $tag_href = 'http://localhost/project/categories/'.$tag.'.php';
 $image = mysqli_real_escape_string($conn, $_REQUEST['image']);
 
 
-$sql = "INSERT INTO news (id,title, short_description, description, tag, tag_href, image, href) VALUES ('$id','$title', '$short_description', '$description', 'tag', '$tag_href', '$image', '$href')";
+$sql = "INSERT INTO news (id,title, short_description, description, tag, tag_href, image, href) VALUES ('$id','$title', '$short_description', '$description', '$tag', '$tag_href', '$image', '$href')";
 
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
@@ -49,3 +49,5 @@ if(mysqli_query($conn, $sql)){
 header("refresh:2; url=addPost.php");
 // mysqli_close($link); 
 ?>
+
+

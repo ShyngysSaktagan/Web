@@ -36,37 +36,7 @@ $row = $result->fetch_assoc();
 </head>
 <body>
 
-	<section>
-		<header>
-		    <div class="container">
-		      <h1 class="logo">
-		      	<a href="contents.html" class="show">≣</a>
-		      	<a href="Project.html">Foodcord</a>
-		      </h1>
-
-		      <nav>
-		        <ul>
-		          <li class="main"><a href="#" style="color:white">НОВОСТИ</a></li>
-		          <li class="new"><a href="new.html">СВЕЖЕЕ</a></li>
-		          <li class="best"><a href="best.html">ЛУЧШЕЕ</a></li>
-		          <li><a href="#"><img class="loop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png"></a></li>
-		          <li class="user"><a href="/Users/shyngys/Desktop/Admin/111/AdminPages/admin.html">User</a></li>
-		        </ul>
-		      </nav>
-		    </div>
-		</header>
-	</section>
-
-	<section class="header">
-		<div class="container">
-			<ul class="subheader">
-				<a href="./health.html">ЗДОРОВЬЕ</a>
-				<a href="likbez.html">ЛИКБЕЗ</a>
-				<a href="sport.html">СПОРТ И ФИТНЕС</a>
-				<a href="tips.html">СОВЕТЫ</a>
-			</ul>
-		</div>
-	</section>
+	<?php include 'header.php'; ?>
 
 	<section class="body">
 		<div class="container">

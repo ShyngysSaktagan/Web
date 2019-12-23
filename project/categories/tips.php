@@ -42,9 +42,9 @@ $result = $conn->query($sql);
 		        <ul>
 		          <li><a href="http://localhost/project/main.php">НОВОСТИ</a></li>
 		          <li><a href="http://localhost/project/header/new.php">СВЕЖЕЕ</a></li>
-		          <li><a href="http://localhost/project/header/best.php" >ЛУЧШЕЕ</a></li>
+		          <!-- <li><a href="http://localhost/project/header/best.php" >ЛУЧШЕЕ</a></li> -->
 		          <li><a href="http://localhost/project/searchLayOut.php"><img class="loop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png"></a></li>
-		          <li><a href="/Users/shyngys/Desktop/Admin/111/AdminPages/admin.html">User</a></li>
+		          <li><a href="http://localhost/project/AdminPages/admin.php">User</a></li>
 		        </ul>
 		      </nav>
 		    </div>

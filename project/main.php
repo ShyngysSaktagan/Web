@@ -30,8 +30,17 @@ $result = $conn->query($sql);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./main.css">
-	<link rel="stylesheet" href="main_js.js" >
+	<!-- <link rel="stylesheet" href="main_js.js" > -->
 	<meta charset="UTF-8">
+	<style>
+	#saerchLayOut.open {
+      display: flex;
+    }
+
+    #overlay2.closed {
+      display: none;
+    }
+	</style>
 </head>
 <body>
 
@@ -57,7 +66,6 @@ $result = $conn->query($sql);
 			</div>
 <!-- ROW 1 -->
 			<div class="rows">
-				
 				<?php while($i++ != mysqli_num_rows($result) + 1) {   
 					$row = $result->fetch_assoc()?>
 					<div class="row">
@@ -84,49 +92,7 @@ $result = $conn->query($sql);
 		</div>
 	</section>
 <!-- BUTTON -->
-	<section class="botton">
-		<div class="container">
-			<div class="botton_links">
-				<div class="botton_link">
-					<ul>
-						<p class="botton_link_dis">ИНФОРМАЦИЯ</p>
-						<li>
-							<a href="">Реклама</a>
-							<a href="">Контакты</a>
-							<a href="aboutUs.html">ОПроекте</a>
-						</li>
-					</ul>
-				</div>
-				<div class="botton_link">
-					<ul>
-						<p class="botton_link_dis">ПОДПИСКА</p>
-						<li>
-							<a href="">Facebook</a>
-							<a href="">Вконтакте</a>
-							<a href="">Telegram</a>
-						</li>
-					</ul>
-				</div>
-				<div class="botton_link">
-					<ul>
-						<p class="botton_link_dis">ПРИЛОЖЕНИЯ</p>
-						<li>
-							<a href="">IOS</a>
-							<a href="">Android</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php include 'footer.php'; ?>
 
-
-	<script type="text/javascript"> 
-        document.getElementById("button_cont").onclick = function() { 
-  
-            document.getElementById("row2").style.display = "block"; 
-  
-        } 
-    </script> 
 
 </body></html>

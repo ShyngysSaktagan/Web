@@ -557,6 +557,15 @@ body{
     }
 
 
+  #saerchLayOut.open {
+      display: flex;
+    }
+
+    #overlay2.closed {
+      display: none;
+    }
+    
+
 
 
 

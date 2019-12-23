@@ -6,25 +6,29 @@
 
 	<style>
 		#saerchLayOut{
-			/*background-color: */
 			padding: 50px;
-			text-align: center;
-		}
+      text-align: center;
+      /*position: fixed;*/
+      
+	}
 
-		#saerchLayOut .search{
-		    border: none;
-		    border-bottom: 2px solid red;
-		    margin: 0 30px 0 30px;
-		    width: 600px;
-		    font-size: 30px;
-		}
+	.search{
+		border: none;
+        border-bottom: 2px solid red;
+        margin: 0 30px 0 30px;
+        width: 600px;
+        font-size: 30px;
+            background: none;
+	}
 
-		#saerchLayOut .button{
-		    border: none;
-    		font-size: 40px;
-		}
-
+	.button {
+		border: none;
+        font-size: 40px;
+        background: none;
+        color: black;	
+	}
 	</style>
+
 </head>
 <body>
 	<div id="saerchLayOut">

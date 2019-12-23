@@ -33,7 +33,7 @@ $result = $conn->query($sql);
     <section class="header">
         <div class="container">
             <div class="logo">
-                <a href="#">Foodcord</a>
+                <a href="http://localhost/project/main.php">Foodcord</a>
             </div>
         
             <ul class="section">
@@ -58,29 +58,29 @@ $result = $conn->query($sql);
 
                 <div class="card">
                     <div class="card-text">Total Likes</div>
-                    <div class="card-info">123</div>
+                    <div class="card-info">0</div>
                 </div>
 
                 <div class="card">
                     <div class="card-text">Mouth Likes</div>
-                    <div class="card-info">123.543</div>
+                    <div class="card-info">0</div>
                 </div>
                     
                 <div class="card">
                     <div class="card-text">Week Likes</div>
-                    <div class="card-info">123.543</div>
+                    <div class="card-info">0</div>
                 </div>    
 
                 <p>. . .</p>
 
                   <div class="card">
                     <div class="card-text">Users</div>
-                    <div class="card-info">12.213</div>
+                    <div class="card-info">0</div>
                 </div>
 
                 <div class="card">
                     <div class="card-text">Posts</div>
-                    <div class="card-info">123.543</div>
+                    <div class="card-info">7</div>
                 </div>
                     
                 <!-- <div class="card">

@@ -42,9 +42,9 @@ $result = $conn->query($sql);
 		        <ul>
 		          <li class="main"><a href="http://localhost/project/main.php">НОВОСТИ</a></li>
 		          <li class="new"><a href="http://localhost/project/header/new.php">СВЕЖЕЕ</a></li>
-		          <li class="best"><a href="http://localhost/project/header/best.php">ЛУЧШЕЕ</a></li>
+		          <!-- <li class="best"><a href="http://localhost/project/header/best.php">ЛУЧШЕЕ</a></li> -->
 		          <li><a href="http://localhost/project/searchLayOut.php"><img class="loop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png"></a></li>
-		          <li class="user"><a href="/Users/shyngys/Desktop/Admin/111/AdminPages/admin.html">User</a></li>
+		          <li class="user"><a href="http://localhost/project/AdminPages/admin.php">User</a></li>
 		        </ul>
 		      </nav>
 		    </div>
@@ -55,8 +55,8 @@ $result = $conn->query($sql);
 	<section class="header">
 		<div class="container">
 			<ul class="subheader">
-				<a href="#" style="color:orange">ЗДОРОВЬЕ</a>
-				<a href="http://localhost/project/categories/likbez.php">ЛИКБЕЗ</a>
+				<a href="http://localhost/project/categories/health.php">ЗДОРОВЬЕ</a>
+				<a href="#" style="color:orange">ЛИКБЕЗ</a>
 				<a href="http://localhost/project/categories/sport.php">СПОРТ И ФИТНЕС</a>
 				<a href="http://localhost/project/categories/tips.php">СОВЕТЫ</a>
 		</ul>
